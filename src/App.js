@@ -9,7 +9,7 @@ import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Ka
 import './App.css'
 
 const App = () => {
-  const activeMenu = false;
+  const activeMenu = true;
   return (
     <div>
       <BrowserRouter>
@@ -31,7 +31,7 @@ const App = () => {
             </div>
           )}
           <div className={ activeMenu ? 'dark:bg-main-bg bg-main-bg min-h-screen md:ml-72 w-full' : 'dark:bg-main-bg bg-main-bg min-h-screen w-full flex-2'}>
-            <div clasName="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
+            <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
               <Navbar />
             </div>
           </div>
